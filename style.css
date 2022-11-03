@@ -1,0 +1,84 @@
+body{
+    font-family: sans-serif;
+    height: 100vh;
+
+    background: linear-gradient(
+        rgba(0,0,0,1),
+        rgba(0,0,0,.5)
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1{
+    font-size: 40px;
+    color: #bbb;
+}
+
+.text-light{
+    color: #fff;
+}
+
+.text-ani{
+    /* border-right: 2px solid red; */
+    animation-name: cursorAni;
+    animation-duration: .8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cursorAni{
+    form{
+        border: none;
+    }
+
+    to{
+        border-right: 2px solid #bbb;
+    }
+}
+
+.red{
+    color: red;
+}
+
+.yellow{
+    color: yellow;
+}
+
+.purple{
+    color: rgb(219, 37, 219);
+}
+
+.skyblue{
+    color: skyblue;
+}
+
+.green{
+    color: greenyellow;
+}
+
+em{
+    font-style: unset;
+    color: #fff;
+    animation-name: textLightAni;
+    animation-duration: .8s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes textLightAni{
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: .5;
+        text-shadow: 0 0 20px #fff;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+};
